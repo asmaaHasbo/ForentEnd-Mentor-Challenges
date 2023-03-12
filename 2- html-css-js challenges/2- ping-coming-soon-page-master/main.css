@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    text-align: center;
+}
+
+.dashboard-img{
+    width: 600px;
+    margin-top: 50px;
+}
+.logo{
+    padding: 30px 0;
+}
+
+h1{
+    font-weight: 100;
+    color:hsl(0, 0%, 59%);
+    padding-bottom: 15px;
+}
+
+span{
+    color: hsl(209, 33%, 12%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+}
+
+input{
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 10px 130px 10px 30px;
+    margin: 20px 0 0px 0 ;
+    border-radius: 30px;
+    outline-color:hsl(223, 100%, 88%);
+
+}
+input::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+button{
+    color: white;
+    background-color:rgb(16, 16, 234)  ;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(99, 99, 223) ;
+}
+
+.icon{
+    text-align: center;
+    
+}
+
+.errorMsg {
+    color:  hsl(354, 100%, 66%);
+    font-size: 17px;
+    position: absolute;
+    left: 35%;
+    bottom: -23px;
+    display: none;
+    font-weight: 100;
+}
+
+@media (max-width : 600px) {
+    .container{
+        font-size: small;
+    }
+    input{
+        margin-bottom: 25px;
+        padding-right: 100px;
+    }
+    button{
+        padding: 10px 120px;
+    }
+    .dashboard-img{
+        width: 350px;
+    }
+    .errorMsg{
+        font-size: 14px;
+        left: 17%;
+    bottom: 44px;
+    }
+}

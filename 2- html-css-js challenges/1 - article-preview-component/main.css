@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.container {
+  width: 700px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 7px 8px 0px #ccc;
+}
+img {
+  width: 250px;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.intro-text {
+  padding: 20px 30px;
+}
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: hsl(217, 19%, 35%);
+}
+
+p {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+}
+
+.avater {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  padding-bottom: 3px;
+}
+.avater > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.avater img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.share-btn {
+  cursor: pointer;
+  background-color: hsl(210, 46%, 95%);
+  padding: 7px 11px;
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.sharing-box {
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  padding: 15px 25px 10px 25px;
+  border-radius: 6px;
+  gap: 13px;
+  position: absolute;
+  top: -75px;
+  left: -88px;
+  visibility: hidden;
+}
+
+.sharing-box::after {
+  position: absolute;
+  content: "";
+  bottom: -26px;
+  right: 91px;
+  border: 15px solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+/*********************/
+
+@media (max-width: 700px) {
+  .container {
+    display: block;
+    margin: 0 20px;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    width: 100%;
+  }
+  .sharing-box {
+    right: 0;
+    left: auto;
+  }
+  .sharing-box::after {
+    right: 20px;
+  }
+}
